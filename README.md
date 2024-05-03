@@ -1,4 +1,4 @@
-# soc-design-program
+![path for magic](https://github.com/Akshay-Bhargav/soc-design-program/assets/168160665/c1250077-38c2-493e-ac7e-dda44523a330)# soc-design-program
 ## DAY 1 - Inception of open-source EDA,OpenLANE and Sky139PDK
 ### How to talk to computers
 #### Introduction to QFN-48 PAckage,Chip,Pads,core,die and IPs
@@ -272,10 +272,33 @@ The Pin placement will look like this for the above circuit
 
 #### Steps to run floorplan using OpenLANE
 
+* run_floorplan = floorplanning command.
+For the floorplanning first let us see the configurations in the OpenLANE 
+![config](https://github.com/Akshay-Bhargav/soc-design-program/assets/168160665/8e5e45b0-fffc-448f-872b-c2a8b7e26fbc)
+
+In the configuaration the floorplanning.tcl and readme files looks like this
+![ff tcl in config](https://github.com/Akshay-Bhargav/soc-design-program/assets/168160665/044a3584![readme file](https://github.com/Akshay-Bhargav/soc-design-program/assets/168160665/00adf7ae-66bd-4f78-9927-71ddd523d89d)
+-77ae-4671-a9f3-11aa06cf50e1)
 
 #### Review floorplan files and steps to view floorplan
-#### Review floorplan layout in Magic
+* def = design exchange format.
+* 1 micron = 1000 database units as per our design.
+Path to check the result core utilization in the floor plan and checking whether the core utilization followed the presedence.
+![checkign2](https://github.com/Akshay-Bhargav/soc-design-program/assets/168160665/265e8492-0554-4891-ba10-88d191fe4e53)
 
+The unit and coordinates and components will be seen in the resuls followed by floorplan then in the def file. The result can be seen like this
+![units and coordinates o fthe die](https://github.com/Akshay-Bhargav/soc-design-program/assets/168160665/16552598-9e5f-44f0-8e89-284dffaeda09)
+
+Now we will see the layout of the specifications through the Magic. The Magic will be present in the skywater130A of PDKS.
+So take the route of magic and the path of the merged lef and also the result flooplan as shown in the figure:
+![path for magic](https://github.com/Akshay-Bhargav/soc-design-program/assets/168160665/4cc17b7c-2e49-4e98-b2ad-21358cc4bf61)
+
+Magic tool will pop up like this
+ ![magic](https://github.com/Akshay-Bhargav/soc-design-program/assets/168160665/09e42141-2b60-4288-9237-99fdfa9abadc)
+
+#### Review floorplan layout in Magic
+* Q+S to select the layout
+* V to fit the selected layout to the centre
 
 
 
